@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page UI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sharda Sarees</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#banner">Banner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Footer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container text-center">
+        <h1>Welcome to Sharda Sarees</h1>
+        <p>Explore our exclusive saree collection with tradition & elegance.</p>
+    </div>
+</section>
+
+<!-- Banner Section -->
+<section id="banner" class="banner-section">
+    <div class="container text-center">
+        <h2>Exclusive Collections</h2>
+        <p>Discover the best sarees for every occasion.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/0vfyu_1200.jpg" class="img-fluid" alt="About Image">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <h4>Traditional Elegance, Modern Style</h4>
+                <p>Sharda Sarees brings you the finest handcrafted sarees, blending heritage with contemporary fashion.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="images/np7bx_1200.jpg" class="img-fluid" alt="Service 1">
+                <p>Handcrafted Sarees</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/ocgmz_1200.jpg" class="img-fluid" alt="Service 2">
+                <p>Custom Designs</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/uwjxh_1200.jpg" class="img-fluid" alt="Service 3">
+                <p>Worldwide Delivery</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer" class="footer-section">
+    <div class="container text-center">
+        <p>Contact Us: info@sharda.com | +91 977-666-5xxx</p>
+        <p>Follow us on Social Media</p>
+    </div>
+</footer>
+
+<!-- Smooth Scrolling Script -->
+<script>
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

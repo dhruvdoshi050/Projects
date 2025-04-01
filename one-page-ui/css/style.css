@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+.home-section {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.banner-section {
+    background: url('../images/banner.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.about-section img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.services-section img {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+}
